@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Outfit", sans-serif;
+}
+
+img,
+button,
+iframe,
+a {
+    user-select: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-answer {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease;
+}
+
+.faq-answer p {
+    margin: 0;
+}
