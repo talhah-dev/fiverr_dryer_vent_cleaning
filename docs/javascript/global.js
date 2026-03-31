@@ -2,6 +2,17 @@ const lenis = new Lenis({
   autoRaf: true,
 });
 
+const siteLoader = document.getElementById("siteLoader");
+if (siteLoader) {
+  document.body.classList.add("loader-active");
+  siteLoader.innerHTML = `
+    <div class="site-loader-panel">
+      <div class="site-loader-spinner" aria-hidden="true"></div>
+      <p class="site-loader-text">Loading</p>
+    </div>
+  `;
+}
+
 const bottomToTopScroll = document.getElementById("bottomToTopScroll");
 
 if (bottomToTopScroll) {
@@ -86,6 +97,25 @@ const initFaqAccordions = () => {
 };
 
 initFaqAccordions();
+
+const hideSiteLoader = () => {
+  if (!siteLoader) return;
+
+  siteLoader.classList.add("is-hidden");
+  document.body.classList.remove("loader-active");
+};
+
+if (document.readyState === "complete") {
+  window.setTimeout(hideSiteLoader, 250);
+} else {
+  window.addEventListener(
+    "load",
+    () => {
+      window.setTimeout(hideSiteLoader, 250);
+    },
+    { once: true }
+  );
+}
 
 AOS.init({
   once: true,
