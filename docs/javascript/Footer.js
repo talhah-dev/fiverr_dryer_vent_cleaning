@@ -82,6 +82,7 @@ if (footer) {
               <p class="text-sm font-semibold uppercase tracking-[0.22em] text-white/45">Contact Info</p>
               <ul class="mt-4 space-y-3 text-sm text-white/72">
                 <li><a class="transition hover:text-[#b7ceff]" href="tel:+19202532833">(920) 253-2833</a></li>
+                <li><a class="transition hover:text-[#b7ceff]" href="mailto:info@dryerventcleaningappleton.com">info@dryerventcleaningappleton.com</a></li>
                 <li>1835 E. Edgewood Dr. Suite 105</li>
                 <li>Appleton, WI 54913</li>
                 <li>Hours: 8:00 AM - 6:00 PM</li>
